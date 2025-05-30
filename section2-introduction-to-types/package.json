@@ -1,0 +1,20 @@
+{
+  "name": "section2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.13.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
+
