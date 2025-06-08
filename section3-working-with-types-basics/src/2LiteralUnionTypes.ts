@@ -32,4 +32,5 @@ function getSalaryForPosition(position: Position): number | undefined /*return t
 }
 
 // Output the salary for a programmer
+console.log(getSalaryForPosition('Programmer')); // 100000
 

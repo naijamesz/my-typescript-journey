@@ -18,7 +18,7 @@ function paySalary(arg: unknown) {
 }
 
 paySalary({ amount: 1000 }); // Paying 1000
-// paySalary({}); // No output, as it doesn't match the Salary type
+paySalary({}); // No output, as it doesn't match the Salary type
 // paySalary('1000'); // No output, as it doesn't match the Salary type
 // paySalary(1000); // No output, as it doesn't match the Salary type
 

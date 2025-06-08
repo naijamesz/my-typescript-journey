@@ -1,11 +1,11 @@
 // 4.1 Optional Modifier
-// Optional modifier allows you to define properties that may or may not be present in an object.
+// Optional modifier allows you to define properties that may or may not be present in an object. using optional modifier `?` question mark after the property name.
 type bonusPercent = 10 | 20 | 30;
 
 type Salary = {
   amount: number;
   currency: 'USD' | 'EUR';
-  yearlyBonus?: bonusPercent;
+  yearlyBonus?: bonusPercent; // This property is optional, it may or may not be present
 };
 
 type Employee = {
@@ -27,6 +27,8 @@ const john: Employee = {
   },
 };
 
+// extraWork is an optional parameter string | undefined
+// function paySalary(empl: Employee, extraWork: string| undefined) {
 function paySalary(empl: Employee, extraWork?: string) {
   console.log(`Payed ${empl.salary.amount} ${empl.salary.currency} to ${empl.name}`);
   if (empl.salary.yearlyBonus) {
@@ -37,6 +39,6 @@ function paySalary(empl: Employee, extraWork?: string) {
   }
 }
 
-paySalary(john);
+paySalary(john, undefined);
 paySalary(john, 'Code reviews');
 

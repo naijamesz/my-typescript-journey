@@ -1,7 +1,7 @@
 
 type Manager = {
-    team?: {
-        scrumMaster?: {
+    team?: { // first level optional property
+        scrumMaster?: { // second level optional property
             holdScrumMeetings: () => void
         }
     }
